@@ -14,6 +14,12 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    colors: {
+      'kaltert': '#67CEF6',
+      'portokall': '#F58220',
+      'hiri': '#2F2F2F',
+      'white': '#FFFFFF'
+    }
   },
   plugins: [],
 }
