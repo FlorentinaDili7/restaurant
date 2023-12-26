@@ -1,3 +1,4 @@
+import DeleteButton from "@/app/components/DeleteButton";
 import Price from "@/app/components/Price";
 import { singleProduct } from "@/data";
 import { ProductType } from "@/types/types";
@@ -40,6 +41,7 @@ const SingleProductPage = async ({ params }: { params: { id: string } }) => {
                 <p>{singleProduct.desc}</p>
                 <Price product={singleProduct} />
             </div>
+            <DeleteButton id={singleProduct.id} />
         </div>
     );
 };
