@@ -28,6 +28,7 @@ export const GET = async (req: NextRequest) => {
 };
 
 // CREATE ORDER
+// Implemented this
 export const POST = async (req: NextRequest) => {
 	const session = await getAuthSession();
 
