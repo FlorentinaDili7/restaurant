@@ -1,8 +1,8 @@
 import { prisma } from '@/utils/connect';
 import { NextRequest, NextResponse } from 'next/server';
 
-export const PUT: NextRequestHandler = async ({ params }) => {
-	const { intentId } = params as { intentId: string };
+export const PUT = async ({ params }: any): Promise<NextResponse> => {
+	const { intentId } = params;
 
 	try {
 		await prisma.order.update({
@@ -17,11 +17,3 @@ export const PUT: NextRequestHandler = async ({ params }) => {
 		return new NextResponse(JSON.stringify({ message: 'Something went wrong!' }), { status: 500 });
 	}
 };
-
-interface NextRequestHandler {
-	(
-		context: {
-			params: { intentId: string };
-		}
-	): Promise<NextResponse>;
-}
