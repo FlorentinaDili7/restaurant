@@ -3,6 +3,9 @@ import { useRouter, useSearchParams } from "next/navigation";
 import React, { useEffect } from "react";
 import ConfettiExplosion from "react-confetti-explosion";
 
+export const runtime = "edge";
+
+
 const SuccessPage = () => {
     const router = useRouter();
     const searchParams = useSearchParams();
