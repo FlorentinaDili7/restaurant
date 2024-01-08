@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 const getData = async () => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    const apiUrl = process.env.VERCEL ? process.env.VERCEL_URL : process.env.NEXT_PUBLIC_API_URL;
     const res = await fetch(`${apiUrl}/api/products`, {
         cache: "no-store"
     })
