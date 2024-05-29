@@ -22,6 +22,8 @@ In summary, the PMANIA web app is an online ordering platform for fast food that
 
 First, run the development server:
 
+
+
 ```bash
 npm run dev
 # or
