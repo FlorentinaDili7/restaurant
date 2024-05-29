@@ -15,7 +15,7 @@ const Navbar = () => {
             </div>
             {/* Logo */}
             <div className="font-extrabold text-kaltert md:text-[24px] md:text-center flex-1">
-                <Link href="/">Pizza Mania</Link>
+                <Link href="/">PMANIA</Link>
             </div>
             <div className="md:hidden">
                 <Menu />
