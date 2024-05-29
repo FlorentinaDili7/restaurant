@@ -6,7 +6,7 @@ export const runtime = "edge";
 
 export default function Home() {
   return (
-    <main>
+    <main className='overflow-hidden'>
       <Slider />
       <Featured />
       <Offer />
