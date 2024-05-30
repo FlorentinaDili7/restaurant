@@ -22,8 +22,6 @@ In summary, the PMANIA web app is an online ordering platform for fast food that
 
 First, run the development server:
 
-
-
 ```bash
 npm run dev
 # or
@@ -32,4 +30,13 @@ yarn dev
 pnpm dev
 ```
 
+## Prisma
+
+pnpm install -g prisma
+
+npx prisma init
+
+npx prisma migrate deploy
+
+npx prisma generate
 
