@@ -32,6 +32,7 @@ pnpm dev
 
 ## Prisma
 
+```
 pnpm install -g prisma
 
 npx prisma init
@@ -39,4 +40,5 @@ npx prisma init
 npx prisma migrate deploy
 
 npx prisma generate
+```
 
